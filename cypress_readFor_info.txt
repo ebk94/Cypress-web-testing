@@ -7,3 +7,17 @@ This issue is not related with Cypress version.
 To resolve this issue, you need to increase default timeout. For this, go to below path: node_modules\cypress\lib\tasks\verify.js
 
 Open verify.js, search variable VERIFY_TEST_RUNNER_TIMEOUT_MS. By default it should be 30000. Change it to 100000
+
+…or create a new repository on the command line
+echo "# RobotFramework" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ebk94/RobotFramework.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/ebk94/RobotFramework.git
+git branch -M main
+git push -u origin main
