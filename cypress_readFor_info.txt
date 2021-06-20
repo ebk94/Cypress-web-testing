@@ -1,0 +1,9 @@
+// to run: npx cypress open
+
+if verification timed out message occur 
+
+This issue is not related with Cypress version.
+
+To resolve this issue, you need to increase default timeout. For this, go to below path: node_modules\cypress\lib\tasks\verify.js
+
+Open verify.js, search variable VERIFY_TEST_RUNNER_TIMEOUT_MS. By default it should be 30000. Change it to 100000
